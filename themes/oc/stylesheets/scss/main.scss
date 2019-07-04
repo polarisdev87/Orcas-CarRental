@@ -1,0 +1,27 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+@import "../vendors/bootstrap.min.css";
+@import "../vendors/select2.css";
+@import "../vendors/reset.css";
+@import "../vendors/fontawesome.min.css";
+@import "../vendors/stm-rental.css";
+@import "../vendors/stm-icon.css";
+@import "../vendors/stm-service.css";
+@import "../vendors/datetimepicker.min.css";
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/template";
+@import "home-page";
+@import "date-reservation-page";
+@import "add-ons-page";
+@import "blog";
+@import "how-it-work";
+@import "contact-us-page";
+@import "single-blog-pages";
+@import "checkout";
+
+
+
+@import "media";

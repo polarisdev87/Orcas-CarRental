@@ -1,0 +1,473 @@
+.short-price {
+  position: relative;
+  float: right;
+  margin: 0 0 28px;
+  outline: none !important;
+  .select2 {
+    width: 100% !important;
+    outline: none !important;
+    &-container--default {
+      min-width: 180px;
+      border: 1px solid #eee;
+    }
+    &-selection {
+      &--single {
+        background-color: #fff;
+        outline: none;
+        height: 32px;
+        border: none;
+        border-radius: 0;
+      }
+      &__rendered {
+        line-height: 32px !important;
+        font-size: 13px;
+        color: #555;
+        font-weight: 400;
+        padding-left: 14px !important;;
+        padding-right: 40px !important;
+        outline: none !important;
+      }
+      &__arrow {
+        height: 33px !important;
+        width: 19px !important;
+      }
+    }
+  }
+}
+
+.select2-results__option{
+  max-height: 350px !important;
+  &--highlighted[aria-selected] {
+    background-color: #f0f2f5 !important;
+    border-bottom-color: #f0f2f5;
+    color: #555 !important;
+  }
+}
+
+.select2-dropdown {
+  border-radius: 0 !important;
+  border-color: #e7e8e8 !important;
+}
+
+.wrapper-date-reservation {
+  background-color: #eeeeee;
+
+  & .reservation {
+
+    &__tittle {
+      font-family: $Montserrat;
+      padding-bottom: 36px;
+      font-size: 36px;
+      line-height: 50px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 84px;
+    }
+
+    &__block {
+      margin-bottom: 30px;
+    }
+
+    &__header {
+      background: rgba(42, 64, 69, 0.5);
+      display: block;
+      position: relative;
+      height: 54px;
+      font-family: $Montserrat;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    &__number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 54px;
+      height: 100%;
+      background-color: #6BC5D3;
+      color: #fff;
+      line-height: 54px;
+      text-align: center;
+
+      &--active:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        content: "\f05d";
+        display: block;
+        font-size: 22px;
+        line-height: 54px;
+      }
+
+    }
+
+    &__text {
+      font-size: 16px;
+      padding-top: 17px;
+      padding-left: 65px;
+      color: $white;
+    }
+
+    &__content {
+      background: $white;
+      padding: 25px 30px 35px;
+      color: #2a4045;
+      margin-bottom: 30px;
+      height: 71%;
+      min-height: 206px;
+
+      & h5 {
+        font-family: $Montserrat;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      & p {
+        font-family: $Open-Sans;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+
+      &--active {
+        background: #D9F1FA;
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          left: 50%;
+          bottom: -8px;
+          margin-left: -5px;
+          border-right: 11px solid transparent;
+          border-left: 11px solid transparent;
+          border-top: 8px solid #26628A;
+        }
+
+      }
+
+    }
+
+    &__first {
+      min-height: 63px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  & .archive {
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    &__tittle {
+      font-family: $Montserrat;
+      font-weight: 700;
+      line-height: 31px;
+      font-size: 26px;
+      color: #2a4045;
+
+      &__header {
+        padding: 26px 0 19px;
+        min-height: 104px;
+      }
+
+    }
+
+    &__item {
+      background: $white;
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding: 36px 38px 28px 23px;
+      display: flex;
+      border: 2px solid #ffffff;
+
+      &--active {
+        border-color: #26628A;
+      }
+
+    }
+
+    &__img {
+
+    }
+
+    &__info {
+      font-family: $Montserrat;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 37%;
+    }
+
+    &__header {
+
+      & h3 {
+        font-size: 20px;
+        line-height: 24px;
+        color: #2a4045;
+        font-weight: 700;
+      }
+
+      & h6 {
+        font-weight: 100;
+        color: #272727;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+    }
+
+    &__main {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--item {
+        display: flex;
+        align-items: center;
+        font-family: $Montserrat;
+        margin: 21px 20px 15px 0;
+
+        & i {
+          top: 4px;
+          color: #F15942;
+          font-size: 20px;
+        }
+
+        & span {
+          font-weight: 400;
+          align-self: center;
+          margin-left: 5px;
+          font-size: 12px;
+          color: #2a4045;
+          text-transform: uppercase;
+          line-height: 22px;
+        }
+
+      }
+
+    }
+
+    &__price {
+      margin-left: auto;
+      text-align: center;
+      font-family: $Montserrat;
+
+      &--total {
+        line-height: 22px;
+        font-size: 18px;
+        color: #2a4045;
+        font-weight: 400;
+        margin-bottom: 2px;
+      }
+
+      &--day {
+        font-family: $Open-Sans;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        color: #888888;
+        margin-bottom: 13px;
+      }
+
+      &--btn {
+        font-weight: 700;
+        line-height: 42px;
+        font-size: 12px;
+        color: #2a4045;
+        display: block;
+        position: relative;
+        min-width: 119px;
+        height: 44px;
+        border: 2px solid #26628A;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper-date-reservation .reservation__block {
+    margin-bottom: 0;
+  }
+
+  .wrapper-date-reservation .reservation__tittle {
+    padding-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .archive__item {
+    flex-direction: column;
+  }
+
+  .archive__price--btn {
+    width: 119px;
+    text-align: center;
+  }
+
+  .wrapper-date-reservation .archive__price {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .wrapper-date-reservation .archive__info {
+    padding-top: 30px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .short-price {
+    float: left !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px;
+  }
+}
+
+// More
+
+.more-link {
+
+  & div {
+    text-decoration: none;
+    font-family: $Open-Sans;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 0.67);
+    line-height: 22px;
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    & span {
+      text-decoration: underline;
+      &:hover {
+        color: #555555;
+      }
+    }
+
+  }
+
+}
+
+
+.more {
+  font-family: $Open-Sans;
+  font-weight: 400;
+  color: #555555;
+  line-height: 22px;
+  &--info--active {
+    color: #555555;
+  }
+
+  &--active {
+    overflow: hidden !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 0 !important;
+    border-width: 0 1px !important;
+    color: #555555 !important;
+  }
+
+  &--active--icon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    color: #555555;
+
+  }
+
+  & .lists-inline {
+    padding-top: 20px;
+
+    & p {
+      font-size: 14px;
+      padding-bottom: 14px;
+    }
+
+    & ul {
+      padding-left: 0;
+      padding-right: 15px;
+      display: inline-block;
+      vertical-align: top;
+      width: 44.7%;
+      list-style: none;
+
+      & li {
+        font-size: 13px;
+        position: relative;
+        padding-left: 26px;
+        margin-bottom: 8px;
+
+        &:before {
+          position: absolute;
+          display: block;
+          font: normal normal normal 14px/1 FontAwesome;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          transform: translate(0, 0);
+          left: 3px;
+          top: 4px;
+          content: "\f058";
+          font-size: 14px;
+          color: #26628A;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width : 767px){
+  .wrapper-date-reservation .archive__header h3{
+    font-weight: 700;
+  }
+
+  .wrapper-date-reservation .archive__price{
+    margin-top: 30px;
+  }
+
+}
+
+@media only screen and (max-width : 476px){
+  .wrapper-date-reservation .archive__main--item:last-child{
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width : 406px){
+  .wrapper-date-reservation .archive__main--item:nth-child(3){
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width : 308px){
+  .wrapper-date-reservation .archive__main--item:first-child{
+    margin-top: 21px;
+  }
+
+  .wrapper-date-reservation .archive__main--item{
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+

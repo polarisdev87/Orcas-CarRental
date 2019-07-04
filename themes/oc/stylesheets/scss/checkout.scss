@@ -1,0 +1,248 @@
+.archive .archive__tittle__header .archive__tittle {
+  text-transform: uppercase;
+}
+
+#country {
+  .select2-selection {
+    border-color: #69bf29 !important;
+    background-color: #fff !important;
+    color: #2a4045 !important;
+  }
+}
+
+.billing-details {
+  background-color: #fff;
+  padding: 35px 30px 30px;
+  .privacy_policy {
+    background-color: #D9F1FA;
+    margin: 0 0 15px;
+    label {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #2a4045;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 5px;
+      line-height: 2;
+      margin-top: 10px;
+      .checker {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        display: inline-block;
+        zoom: 1;
+        vertical-align: middle;
+        border: 0;
+        font: inherit;
+        margin: 0;
+        padding: 0;
+        top: -1px;
+        margin-right: 10px !important;
+        span {
+          background-image: url("../../images/rental-checks.png");
+          background-size: 32px !important;
+          background-repeat: no-repeat;
+          zoom: 1;
+          text-align: center;
+          background-position: 0 0;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          input {
+            margin-top: 17px;
+            float: left;
+            position: absolute;
+            text-align: center;
+            display: none;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  h4 {
+    margin: 0;
+    margin-bottom: 11px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__wrapper {
+    display: inline-block;
+    .checked {
+      background-position: -16px 0 !important;
+    }
+    .bg_image {
+
+      input {
+        margin: 17px 8px 0 0;
+        float: left;
+        display: inline;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+abbr.required {
+  color: red;
+  font-weight: 700;
+  border: 0;
+}
+
+.fields__wrapper {
+  .form-group {
+    label {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #2a4045;
+      font-weight: 700;
+    }
+    input {
+      background-color: #eee;
+      border-radius: 2px;
+    }
+  }
+}
+
+.checkout {
+  background: #ffffff;
+  padding: 37px 39px 10px 39px;
+  margin-top: 22px;
+
+  &__table {
+
+    & tr {
+      border-bottom: 1px solid #ffffff;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+
+  &__header {
+    font-family: $Montserrat;
+
+    & h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #2a4045;
+      text-transform: uppercase;
+    }
+
+    & p {
+      font-weight: 400;
+      color: #28282E;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+  }
+
+  &__item {
+    padding: 6px 0 6px 18px;
+    margin-top: 6px;
+
+    & h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 24px;
+      color: #2a4045;
+      font-weight: 700;
+    }
+
+    & a {
+      color: #888;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      border-bottom: 1px solid #888;
+    }
+  }
+
+  &__block-more {
+    font-family: 'Open Sans';
+    padding-top: 30px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #555555;
+
+    & p {
+      margin-bottom: 14px;
+    }
+
+  }
+
+}
+
+.payment {
+  background: #ffffff;
+  padding: 35px 30px 30px 30px;
+
+  & h3 {
+    margin-bottom: 11px;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $Montserrat;
+  }
+
+  & p {
+    margin-bottom: 11px;
+    font-family: $Open-Sans;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+  }
+
+  & label {
+    margin-left: 30px;
+    font-weight: 400;
+    line-height: 2;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 11px;
+
+    & .required {
+      color: red;
+    }
+
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: block;
+    padding: 12px 15px 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border: 3px solid #F15942;
+    background-color: #F15942;
+    text-align: center;
+    text-decoration: none !important;
+    transition: .3s;
+    outline: 0;
+
+    &:hover {
+      background-color: #7A4D46;
+      border: 3px solid #7A4D46;
+    }
+
+    &:active {
+      position: relative;
+      top: 2px;
+      transition: opacity .3s ease-in !important;
+
+    }
+
+  }
+
+}

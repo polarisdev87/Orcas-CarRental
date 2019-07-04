@@ -1,0 +1,792 @@
+/* Comments */
+.comments-title {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment-reply-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.single-post #main {
+    margin-bottom: 36px;
+}
+
+.comment.parent .comment-body {
+    position: relative;
+}
+
+.comment.parent .comment-body:after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 40px;
+    width: 36px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.comment .comment-body {
+    min-height: 80px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.comment .comment-avatar {
+    position: relative;
+    float: left;
+    margin-right: 29px;
+}
+
+.comment .comment-avatar img {
+    border-radius: 50%;
+}
+
+.comment .comment-avatar:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 88px;
+    left: 50%;
+    width: 1px;
+    height: 2000px;
+    background-color: #ddd;
+}
+
+.comment .comment-info-wrapper {
+    overflow: hidden;
+}
+
+.comment .comment-info-wrapper .comment-info {
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+.comment .comment-info-wrapper .comment-text {
+    min-height: 70px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 22px;
+    color: #888888;
+    font-style: italic;
+}
+
+.comment .comment-info-wrapper .comment-text p {
+    margin-bottom: 5px;
+}
+
+.comment .commentmetadata {
+    color: #888;
+    font-size: 12px;
+}
+
+.comment .commentmetadata a {
+    color: #888;
+}
+
+.comment .commentmetadata a:hover {
+    color: #388BCA;
+    text-decoration: none;
+}
+
+.comment .commentmetadata .comment-meta-data-unit {
+    vertical-align: top;
+}
+
+.comment .commentmetadata .comment-meta-data-unit a {
+    color: #388BCA;
+}
+
+.comment .commentmetadata .comment-meta-data-unit a i {
+    font-size: 11px;
+}
+
+.comment .comment-divider {
+    margin: 0 7px;
+    color: #888;
+}
+
+.comment .comment-reply-link {
+    margin-left: 2px;
+}
+
+.comment .comment-reply-link i {
+    margin-right: 7px;
+}
+
+.comment .comment-edit-link {
+    margin-left: -2px;
+}
+
+.comment .comment-edit-link i {
+    position: relative;
+    top: 1px;
+    font-size: 13px !important;
+    margin-right: 7px;
+}
+
+.comment .comment-author .h5 a {
+    color: #28282E;
+    font-weight: 700;
+}
+
+.comment .comment-date {
+    margin-right: -5px;
+}
+
+ul.comment-list li ul.children {
+    padding-left: 43px;
+    list-style: none;
+}
+
+ul.comment-list li ul.children > li.parent .comment-avatar:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 73px;
+    left: 50%;
+    width: 1px;
+    height: 2000px;
+    background-color: #ddd;
+}
+
+ul.comment-list li ul.children .comment-body {
+    padding-top: 18px;
+    margin-top: -18px;
+}
+
+ul.comment-list li ul.children .comment-body:after {
+    display: none;
+}
+
+ul.comment-list li ul.children .comment-avatar {
+    position: relative;
+    margin-right: 35px;
+}
+
+ul.comment-list li ul.children .comment-avatar img {
+    max-width: 65px;
+}
+
+ul.comment-list li ul.children .comment-avatar:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -18px;
+    left: 50%;
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+}
+
+ul.comment-list li ul.children ul.children {
+    padding-left: 0;
+}
+
+ul.children .comment:not(.parent) {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+ul.children .comment:not(.parent):after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: -43px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+ul.children .comment:not(.parent) .comment-avatar:before {
+    display: none !important;
+}
+
+ul.children .comment:not(.parent) .comment-body .comment-text {
+    padding-bottom: 30px;
+    border-bottom: none;
+}
+
+.comment-list {
+    margin-bottom: 30px;
+}
+
+.comment-list > li.comment:not(.parent) {
+    position: relative;
+}
+
+.comment-list > li.comment:not(.parent):after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.comment-list > li.comment:not(.parent) .comment-avatar:before {
+    display: none !important;
+}
+
+.comment-list > li.comment:not(.parent) .comment-body .comment-text {
+    border-bottom: none;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/* Custom pagination */
+.custom-blog-pagination {
+    position: relative;
+}
+
+.custom-blog-pagination a {
+    display: block;
+}
+
+.custom-blog-pagination .page-numbers {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+}
+
+.custom-blog-pagination .page-numbers li a.next,
+.custom-blog-pagination .page-numbers li a.prev {
+    top: 0;
+}
+
+.custom-prev-next {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 54px;
+    height: 35px;
+    background-color: #388BCA;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    z-index: 15;
+}
+
+.custom-prev-next i {
+    color: #fff;
+}
+
+.custom-prev-next.custom-next-btn {
+    right: 0;
+}
+
+.custom-prev-next .custom-prev-btn {
+    left: 0;
+}
+
+.custom-prev-next.disabled {
+    background-color: #ddd;
+}
+
+ul.page-numbers {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    padding: 45px 60px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+ul.page-numbers li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+ul.page-numbers li > a {
+    display: block;
+    width: 34px;
+    height: 35px;
+    margin: 0 8px;
+    padding: 0;
+    background-color: #388BCA;
+    color: #fff !important;
+    border-top: none;
+    border-radius: 3px;
+    line-height: 35px;
+    text-decoration: none !important;
+}
+
+ul.page-numbers li > span {
+    display: block;
+    width: 34px;
+    height: 35px;
+    margin: 0 8px;
+    padding: 0;
+    background-color: #dddddd;
+    color: #fff !important;
+    border-top: none;
+    border-radius: 3px;
+    line-height: 35px;
+}
+
+ul.page-numbers li .prev, ul.page-numbers li .next {
+    width: 54px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+ul.page-numbers li .prev {
+    position: absolute;
+    left: 0;
+    top: 45px;
+}
+
+ul.page-numbers li .next {
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+/* About us */
+b, strong {
+    font-weight: 700;
+}
+
+.about-us__persons .about-us__person {
+    float: left;
+    padding: 15px 0 15px 0;
+}
+
+.about-us__persons .about-us__person img.about-us__person--image {
+    float: left;
+    margin: 5px 20px 10px 0;
+    width: 170px;
+    height: 170px;
+}
+
+/* How it works */
+
+.how-it-works__advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.how-it-works__advantages .how-it-works__advantage {
+    padding-bottom: 40px;
+}
+
+.how-it-works__advantages .how-it-works__advantage .how-it-works__advantage--icon {
+    float: left;
+    width: 80px;
+    text-align: center;
+    color: #6bc5d3;
+    margin: 0 20px 20px 0;
+}
+
+.how-it-works__advantages .how-it-works__advantage .how-it-works__advantage--content {
+    font-size: 13px;
+    margin-left: 100px;
+    color: #6e6e6e !important;
+    line-height: 20px;
+}
+
+.how-it-works__advantages .how-it-works__advantage .how-it-works__advantage--content .how-it-works__advantage--title {
+    font-size: 18px;
+    color: #3F404A !important;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Partners */
+.our-partners__partner {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-partners__partner .our-partners__partner--name {
+    margin-top: 15px;
+}
+
+.our-partners__partner .our-partners__partner--name, .our-partners__partner .our-partners__partner--url {
+    float: left;
+    width: 100%;
+}
+
+.btn input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/* CF7 Custom Styles */
+.wpcf7-form textarea {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    color: #888888;
+    border: 2px solid #6BC5D3;
+    font-size: 14px;
+    outline: none !important;
+    background-color: #D9F1FA;
+}
+
+.wpcf7-form .contact-us__submit input[type="submit"]{
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+.xdsoft_datetimepicker  .xdsoft_timepicker{
+    /* changed from 58px */
+    width: 88px;
+    float:left;
+    text-align:center;
+    margin-left:8px;
+    margin-top:0px;
+}
+.xdsoft_datetimepicker  .xdsoft_timepicker .xdsoft_prev,
+.xdsoft_datetimepicker  .xdsoft_timepicker .xdsoft_next{
+    float:none;
+    height: 15px;
+    width: 30px;
+    display: block;
+    /* changed from 14px */
+    margin-left:29px;
+    margin-top:7px;
+}
+
+/* Car Rental Form*/
+.car-rental-form {
+    height: 100%;
+    padding: 20px 70px;
+    background-color: #fff;
+    margin: 50px 0 100px 0;
+}
+
+.car-rental-form__label {
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.car-rental-form__label .car-rental-form__location-same {
+    float: right;
+}
+
+.car-rental-form__label .car-rental-form__location-same__return {
+    color: red;
+    cursor: pointer;
+}
+
+.car-rental-form__checkbox input{
+    position: relative;
+    top: 2px;
+}
+
+.car-rental-form__location-pickup-selects {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.car-rental-form__select-box {
+    position: relative;
+    font-size: 13px;
+}
+
+.car-rental-form__location-pickup-selects__pair .car-rental-form__location-pickup-select {
+    float: left!important;
+    width: 48%!important;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.car-rental-form__location-pickup-selects__pair .car-rental-form__location-return-select {
+    display: block!important;
+    margin-left: 4%;
+}
+
+.car-rental-form__location-pickup-selects__pair .car-rental-form__checkbox {
+    display: none;
+}
+
+.car-rental-form__location-pickup-select .select2 {
+    width: 100% !important;
+    outline: none !important;
+    background-color: #f3f3f3;
+    color: #333;
+    height: 40px;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+    text-indent: 28px;
+
+}
+
+.car-rental-form__location-pickup-select i {
+    position: absolute !important;
+    top: 14px !important;
+    left: 10px !important;
+    color: #3F404A !important;
+    z-index: 25;
+}
+
+.car-rental-form__location-return-select {
+    display: none;
+}
+
+.car-rental-form__datetime-picker {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.car-rental-form__date-picker {
+    float: left;
+    width: 60%;
+}
+
+.car-rental-form__date-picker i {
+    position: absolute !important;
+    top: 13px !important;
+    left: 6px !important;
+    color: #3F404A !important;
+    cursor: pointer;
+    z-index: 25;
+}
+
+.car-rental-form input[type="text"] {
+    width: 100% !important;
+    outline: none !important;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    color: #333;
+    height: 40px;
+    border: 1px solid #f3f3f3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+}
+
+/*.car-rental-form__select:focus, .car-rental-form input[type="text"]:focus{
+    border:1px solid #ff7d19;
+}*/
+
+.car-rental-form__date-picker .car-rental-form__date-picker__input {
+    padding: 0 5px 0 24px!important;
+}
+
+.car-rental-form__time-picker {
+    float: left;
+    width: 40%;
+}
+
+.car-rental-form__time-picker .car-rental-form__time-picker__input {
+    padding: 0 5px 0 0!important;
+    text-align: center;
+}
+
+.car-rental-form__button-section__button {
+    margin-top: 26px!important;
+    width: 100%;
+    height: 40px;
+    background: #ff7d19 url('../../images/car_rental_arrow.svg') no-repeat 50% 50%!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+}
+
+.car-rental-form__button-section__button span {
+    display: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.car-rental-form__have-promocode {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+}
+
+.car-rental-form__have-promocode.checked {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.car-rental-form__have-promocode.checked:after {
+    content: 'promo code?';
+    color: #333;
+}
+
+.car-rental-form__have-promocode:after {
+    content: 'x';
+    color: red;
+}
+
+.car-rental-form__promocode {
+    display: none;
+}
+
+.car-rental-form__errors {
+    margin: 5px 0 0 0;
+}
+
+.car-rental-form__errors .car-rental-form__error {
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Custom datepicker styles */
+.xdsoft_datetimepicker .xdsoft_datepicker {
+    width: 300px!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
+    height: 30px!important;
+    text-align: center;
+    font-size: 13px!important;
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(228, 231, 231) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+    color: rgb(255, 255, 255) !important;
+    background: rgb(102, 226, 218) !important;
+    box-shadow: none;
+}
+
+.xdsoft_datepicker td.car-rental-form__highlight {
+    color: rgb(255, 255, 255) !important;
+    background: rgb(102, 226, 218) !important;
+    box-shadow: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td>div {
+    padding: 0!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .home .wrapper-pick_up {
+        padding: 10px!important;
+    }
+
+    .car-rental-form {
+        height: 100%;
+        padding: 15px;
+        background-color: #fff;
+        margin: 29px 0!important;
+    }
+
+    .car-rental-form__label {
+        font-size: 11px;
+        display: block;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .car-rental-form__button-section__button {
+        width: 100%;
+        margin-top: 10px!important;
+        background: #ff7d19!important;
+        line-height: 5px!important;
+    }
+
+    .car-rental-form__button-section__button span {
+        display: inline;
+    }
+
+    .car-rental-form__location-pickup-selects {
+        margin-bottom: 5px;
+    }
+
+    .car-rental-form__date-picker i {
+        display: none;
+    }
+
+    .car-rental-form__date-picker .car-rental-form__date-picker__input {
+        padding: 0 5px 0 4px!important;
+    }
+
+    .car-rental-form__time-picker .car-rental-form__time-picker__input {
+        padding: 0px!important;
+    }
+
+    .car-rental-form__location-pickup-selects__pair .car-rental-form__location-pickup-select {
+        float: none!important;
+        width: 100%!important;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .car-rental-form__location-pickup-selects__pair .car-rental-form__location-return-select {
+        margin: 10px 0 0 0;
+    }
+
+    .car-rental-form__date-picker {
+        width: 58%!important;
+    }
+
+    .car-rental-form__time-picker {
+        width: 42%!important;
+    }
+}

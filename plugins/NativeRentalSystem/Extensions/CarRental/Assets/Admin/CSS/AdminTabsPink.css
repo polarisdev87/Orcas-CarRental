@@ -1,0 +1,12 @@
+/**/
+/* defaults */
+/**/
+.car-rental-admin-tabs > label:hover span span {
+	background: #d2477e;
+}
+.car-rental-admin-tabs > input:checked + label span span {
+	background: #d2477e;
+}
+.car-rental-admin-tabs > .active span span {
+	background: #d2477e !important;	
+}

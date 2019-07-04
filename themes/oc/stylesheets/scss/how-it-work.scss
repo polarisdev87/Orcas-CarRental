@@ -1,0 +1,38 @@
+.works{
+  font-family: $Open-Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+  padding-bottom: 48px;
+
+  &>.container>.row{
+    margin-right: 0;
+  }
+
+  & h1{
+    font-family: $Montserrat;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #28282e;
+    margin-bottom: 15px;
+  }
+
+  & p{
+    margin-bottom: 14px;
+  }
+
+  & ol{
+    list-style: decimal;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+
+    & li{
+      margin-bottom: 8px;
+    }
+
+  }
+
+}

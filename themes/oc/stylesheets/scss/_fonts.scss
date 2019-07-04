@@ -1,0 +1,57 @@
+/*
+Example
+
+@font-face{
+  font-family: "Roboto";
+  src:url("fonts/Roboto/roboto.eot");
+  src:url("fonts/Roboto/roboto.eot?#iefix") format("embedded-opentype"),
+  url("fonts/Roboto/roboto.ttf") format("truetype"),
+  url("fonts/Roboto/roboto.woff") format("woff"),
+  url("fonts/Roboto/roboto.svg#Roboto") format("svg");
+}
+
+*/
+
+
+// Open Sans
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('/fonts/opensans/opensanslight.woff2') format('woff2'), url('/fonts/opensans/opensanslight.woff') format('woff'), url('/fonts/opensans/opensanslight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'), url('/fonts/opensans/opensans.woff2') format('woff2'), url('/fonts/opensans/opensans.woff') format('woff'), url('/fonts/opensans/opensans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/fonts/opensans/opensansbold.woff2') format('woff2'), url('/fonts/opensans/opensansbold.woff') format('woff'), url('/fonts/opensans/opensansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+//Open Sans
+
+//montserrat
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('/fonts/montserrat/montserratlight.woff2') format('woff2'), url('/fonts/montserrat/montserratlight.woff') format('woff'), url('/fonts/montserrat/montserratlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Regular'), url('/fonts/montserrat/montserrat.woff2') format('woff2'), url('/fonts/montserrat/montserrat.woff') format('woff'), url('/fonts/montserrat/montserrat.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('/fonts/montserrat/montserratbold.woff2') format('woff2'), url('/fonts/montserrat/montserratbold.woff') format('woff'), url('/fonts/montserrat/montserratbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+//montserrat

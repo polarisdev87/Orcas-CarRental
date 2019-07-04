@@ -1,0 +1,9 @@
+Do not add your own translations to this directory. They will be lost during plugin
+updates. The only .php files that should be loaded from here are pre-made translations
+that come with the plugin.
+
+Store your translations at:
+wp-content/languages/{$extension}/{$locale}.php
+(e.g. wp-content/languages/CarRental/en_US.php) to keep them safe from loss during updates.
+
+Please feel free to submit your translation to us.
